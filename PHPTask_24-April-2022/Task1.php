@@ -46,3 +46,32 @@ if($firstInteger == $secondInteger )
 }
 
 echo(sum(2,2));
+
+function sum2($firstInteger,$secondInteger){
+    if(($firstInteger + $secondInteger)==30){
+        echo "false <br>";
+    }
+}
+sum2(10,10);
+
+function positive($number){
+    if($number%3 > 0){
+        return true;
+    }
+    else
+    return flase;
+
+}
+
+echo "<br>".positive(20);
+
+function num($num){
+    if($num >20 && $num<50){
+        return true;
+    }
+    else return flase;
+}
+
+function largest_number(){
+    
+}
