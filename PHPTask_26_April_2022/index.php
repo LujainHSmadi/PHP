@@ -5,7 +5,7 @@
 1.	Create a script using a for loop to add all the integers between 0 and 30 and display the total. **  Required **
 
 Expected Output:  total as a number */
-echo "Q1 <br>";
+echo "**************Q1********************* <br>";
 echo "<br>";
     $sum = 0;
     for($i = 0; $i<=30; $i++){
@@ -59,7 +59,7 @@ Expected Output:
 0 0 0 0 5
 */
 echo "<br>";echo "<br>";
-echo "Q4 <br>";
+echo "************************Q4********************<br>";
 function pat($num){
  for($i = 1;$i<=$num; $i++){
      for($j=1;$j<=$num; $j++){
@@ -81,7 +81,7 @@ pat(8);
 Sample Input: 5
 Expected Output: 120
 */
-echo "Q5.";
+echo "******************Q5.************************";
 function factorial($num){
     $fac =1;
     for($i =2; $i<=$num; $i++){
@@ -102,7 +102,7 @@ Fibonacci is a series of numbers where a number is the sum of previous two numbe
 
 Expected Output: 0, 1, 1, 2, 3, 5, 8, 13, 21, … **  Required **
 */
-echo "Q6.";
+echo "********************Q6.**********************";
 echo "<br>";
 echo "<br>";
 function fibonacci($num)
@@ -148,17 +148,26 @@ Sample output:
 7 8 9 10
 11 12 13 14 15
 */
-echo "9.";
 echo "<br>";
+echo "******************Q9.***************";
+
 echo "<br>";
+function Floyd($num){
 $count = 1;
-for($i = 1; $i < 15 ; $i++ ){
+for($i = 1; $i < $num ; $i++ ){
     for($j=1; $j<$i; $j++){
-        // if($i <= $j)
-        echo $i." ";
+        echo $count." ";
+       $count++;
+                 
+        
     }
     echo "<br>";
 }
+}
+Floyd(7);
+echo "<br>";
+echo "<br>";
+
 
 /*
 
