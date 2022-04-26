@@ -29,6 +29,33 @@ A A A B B
 A A C C C 
 A D D D D 
 E E E E E
+*/
+echo "**************Q2********************* <br>";
+
+function alph($num){
+    $letter = 65;
+$count=0;
+for($i= 0; $i<$num; $i++){
+    $count=0;
+    for($j = $num-2;$j>=$i;$j--){
+        
+        echo 'A ';
+        
+    }
+   
+    while($count <=$i){
+    echo chr($letter)." ";
+        $count++;
+}
+$letter++;
+    echo '<br>';
+    
+
+}
+}
+alph(5);
+
+/*
 
 3.	Create a script to generate the following pattern, using the nested for loop. . **  Optional **
 
@@ -44,6 +71,30 @@ Expected Output:
 
 
 */
+echo "**************Q2********************* <br>";
+
+function numbers($num){
+    $numb = 1;
+$count=0;
+for($i= 0; $i<$num; $i++){
+    $count=0;
+    for($j = $num-2;$j>=$i;$j--){
+        
+        echo 1;
+        
+    }
+   
+    while($count <=$i){
+    echo $numb." ";
+        $count++;
+}
+$numb++;
+    echo '<br>';
+    
+
+}
+}
+numbers(5);
 
 /*
 
