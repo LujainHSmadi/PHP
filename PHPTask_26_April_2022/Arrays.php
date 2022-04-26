@@ -13,6 +13,19 @@ Expected Output:
 •	green
 •	red
 •	white
+
+*/
+echo "*************** Q1 **************";
+$colors = array('white','green','blue');
+
+for($i = 0;$i<count($colors);$i++){
+    echo '<li>'.$colors[$i] ;
+    
+
+}
+
+
+/*
  
 2.	**  Required ** $cities= array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", "Finland"=>"Helsinki", "France" => "Paris", "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland"=>"Dublin", "Netherlands"=>"Amsterdam", "Portugal"=>"Lisbon", "Spain"=>"Madrid" ); 
 
@@ -22,7 +35,22 @@ The capital of Netherlands is Amsterdam
 The capital of Greece is Athens 
 The capital of Germany is Berlin 
 
+*/
+echo "<br>";
+echo "<br>";
 
+echo "*************** Q2 **************";
+echo "<br>";
+
+$cities = array("Italy"=>"Roma", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", "Finland"=>"Helsinki", "France" => "Paris", "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland"=>"Dublin", "Netherlands"=>"Amsterdam", "Portugal"=>"Lisbon", "Spain"=>"Madrid" );
+
+foreach($cities as $key => $value){
+    echo "The capital of " . $key . " is " . $value;
+    echo "<br>";
+}
+echo "<br>";
+echo "<br>";
+/*
 
 
 
@@ -31,7 +59,16 @@ The capital of Germany is Berlin
 Write a PHP script to display the first element of the above array. 
 Expected Output:  white
  
- 
+ */
+echo "*************** Q3 **************";
+echo "<br>";
+$color = array (4 => 'white', 6 => 'green', 11=> 'red');
+echo $color[4];
+
+
+echo "<br>";
+echo "<br>";
+ /*
  
 4.	**  Required ** Write a PHP script to sort the following associative array depending on the key value [asc] :  
 
@@ -45,8 +82,20 @@ c = apple
 b = banana
 d = lemon
 a = orange
+*/
 
- 
+echo "*************** Q4 **************";
+echo "<br>";
+$fruits = array("d" => "lemon", "a" => "orange", "b" => "banana", "c" => "apple");
+asort($fruits);
+echo '<pre>';
+print_r($fruits );
+echo '<pre/>';
+
+
+
+
+ /*
 5.	**  Optional ** Write a PHP script to calculate and display the average temperature for the recorded reads, also the script should display the list of the five lowest and the five highest temperatures. 
 
 Sample Input:  78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62, 65, 64, 68, 73, 75, 79, 73
@@ -103,11 +152,9 @@ Sample Output: 17 16 13 20 14 19 18 15 11 12
 10.	**  Optional ** Write a PHP script that returns the lowest integer in the array  that is not 0. 
 
 Sample Input: $array1 = array( 2, 0, 10, 12, 6) 
-Sample Output:  2
+Sample Output:  2*/
 
 		          
 
 
 
-
-*/
