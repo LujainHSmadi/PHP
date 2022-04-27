@@ -106,7 +106,7 @@ Average Temperature is: 70.6
 List of seven lowest temperatures: 60, 62, 63, 63, 64, 
 List of seven highest temperatures: 76, 78, 79, 81, 85,
 */
-echo "*************** Q4 **************";
+echo "*************** Q5 **************";
 echo "<br>";
 echo "<br>";
 $temp = array(78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62, 65, 64, 68, 73, 75, 79, 73);
@@ -157,13 +157,36 @@ Array
     [shape] => trapezoid
     [4] => 4
 )
+*/
+echo "*************** Q6 **************";
+echo "<br>";
+echo "<br>";
 
+$array1 = array("color" => "red", 2, 4);
+$array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4);
+print_r(array_merge($array1,$array2));
+echo "<br>";
+echo "<br>";
+/*
 
  
 7.	**  Optional ** Write a PHP script which displays all the numbers between 200 and 250 that are divisible by 4.      
 
 Expected Output: 200,204,208,212,216,220,224,228,232,236,240,244,248
- 
+
+*/
+echo "*************** Q7 **************";
+echo "<br>";
+echo "<br>";
+
+    for($i = 200; $i <= 250;$i++)
+        if($i % 4 == 0)
+            echo "$i,";
+        
+    echo "<br>";
+
+
+/*
 8.	**  Required ** Write a PHP script to get the shortest/longest string length from an array. 
 
 Sample Input:
@@ -209,7 +232,15 @@ echo "<br>";
 Sample Input: (11, 20)
 Sample Output: 17 16 13 20 14 19 18 15 11 12
  
+*/
+function ran($n,$m){
+   $uniqueNums = range($n,$m);
+    shuffle($uniqueNums);
+    print_r( $uniqueNums);
+}
+ran(11,20);
 
+/*
 
 10.	**  Optional ** Write a PHP script that returns the lowest integer in the array  that is not 0. 
 
