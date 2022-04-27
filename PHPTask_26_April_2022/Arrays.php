@@ -92,7 +92,8 @@ echo '<pre>';
 print_r($fruits );
 echo '<pre/>';
 
-
+echo "<br>";
+echo "<br>";
 
 
  /*
@@ -140,7 +141,36 @@ Sample Input:
 Expected Output : 
 
 The shortest array length is 1. The longest array length is 4.
- 
+ */
+
+echo "*************** Q8 **************";
+echo "<br>";
+
+ $words =  array("abcd","abc","de","hjjj","g","wer");
+$min_len = strlen($words[0]);
+echo strlen($words[0]);
+$max_len = strlen($words[0]);
+
+foreach($words as $index){
+    if($min_len > strlen($words[$index])){
+        $min_len = strlen($words[$index]);
+    }
+    if($max_len < strlen($words[$index]) ){
+        $max_len = strlen($words[$index]);
+    }
+}
+
+echo "The shortest array length is" . $min_len ."<br>";
+echo "The longest array length is" . $max_len ."<br>";
+
+
+
+
+echo "<br>";
+echo "<br>";
+
+
+ /*
  
 9.	**  Optional ** Write a PHP script to generate unique random 10 numbers within a specific range. 
 
