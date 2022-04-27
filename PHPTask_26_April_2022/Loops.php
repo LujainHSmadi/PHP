@@ -171,6 +171,8 @@ for($i=0;$i<=$num;$i++)
 }
 echo "<pre>";
 print_r(fibonacci(6));
+echo "<br>";
+echo "<br>";
 /*
  
 7.	Write a PHP script that creates the following table using for loops. Add cellpadding="3px" and cell spacing="0px" to the table tag. . **  Optional **
@@ -180,8 +182,24 @@ print_r(fibonacci(6));
 4 * 1 = 4	4 * 2 = 8	4 * 3 = 12	4 * 4 = 16	4 * 5 = 20
 5 * 1 = 5	5 * 2 = 10	5 * 3 = 15	5 * 4 = 20	5 * 5 = 25
 6 * 1 = 6	6 * 2 = 12	6 * 3 = 18	6 * 4 = 24	6 * 5 = 30
-
- 
+ */
+echo "********************Q6.**********************";
+echo "<br>";
+echo "<br>";
+echo "<table>";
+ for($i=1; $i<7; $i++){
+     echo "<tr>";
+     for($j=1; $j<7; $j++)
+     {
+         echo "<td>";
+         echo "$i * $j = " . $i*$j;
+echo "<td/>";
+     }
+     echo "<tr/>";
+ }
+echo "<br>";
+echo "<br>";
+ /*
 
  
 8.	Write a PHP program that repeats integers from 1 to 50. For multiples of three, print "Fizz" instead of the number, and for multiples of five print "Buzz". For numbers that are multiples of both three and five, print "FizzBuzz".. **  Optional **
