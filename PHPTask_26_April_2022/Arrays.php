@@ -105,6 +105,38 @@ Expected Output:
 Average Temperature is: 70.6 
 List of seven lowest temperatures: 60, 62, 63, 63, 64, 
 List of seven highest temperatures: 76, 78, 79, 81, 85,
+*/
+echo "*************** Q4 **************";
+echo "<br>";
+echo "<br>";
+$temp = array(78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62, 65, 64, 68, 73, 75, 79, 73);
+$temp = array_unique($temp);
+$sum=0;
+$avg;
+sort($temp);
+
+for($i = 0; $i<count($temp); $i++){
+    $sum += $temp[$i];
+
+}
+$avg = $sum/count($temp);
+echo "Average Temperature is: " . $avg;
+echo "<br>List of seven lowest temperatures: ";
+
+echo "<br>";
+for($i = 0; $i<7; $i++){
+    echo $temp[$i].",";
+
+}
+echo "<br>";
+rsort($temp);
+for($i = 7; $i>0; $i--){
+    echo $temp[$i].",";
+
+}
+echo "<br>";
+echo "<br>";
+/*
  
 6.	**  Optional ** Write a PHP program to merge the following two arrays. 
 
@@ -148,15 +180,15 @@ echo "<br>";
 
  $words =  array("abcd","abc","de","hjjj","g","wer");
 $min_len = strlen($words[0]);
-echo strlen($words[0]);
+
 $max_len = strlen($words[0]);
 
-foreach($words as $index){
-    if($min_len > strlen($words[$index])){
-        $min_len = strlen($words[$index]);
+foreach($words as $value){
+    if($min_len > strlen($value)){
+        $min_len = strlen($value);
     }
-    if($max_len < strlen($words[$index]) ){
-        $max_len = strlen($words[$index]);
+    if($max_len < strlen($value) ){
+        $max_len = strlen($value);
     }
 }
 
