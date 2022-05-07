@@ -174,7 +174,7 @@ return $result;
 echo calc(10,20,'*')."<br>";
 
 
-$nums = array(60,86,95,63,55,74,79,62,50);
+$numbers = array(60,86,95,63,55,74,79,62,50);
 $sum = 0;
 for($i = 0; $i < count($numbers); $i++)
     $sum += $numbers[$i];
@@ -182,13 +182,16 @@ for($i = 0; $i < count($numbers); $i++)
 $avg = $sum / count($numbers);
 
 if($avg < 60){
-    echo "F";
+    echo "F <br>";
 }else if($avg>60 && $avg <= 70){
-    echo "D";
+    echo "D <br>";
 }else if($avg > 70 && $avg <= 80){
-    echo "C";
+    echo "C <br>";
 }else if($avg > 80 && $avg <= 90){
     echo "B";
 }else if($avg > 90 && $avg <= 100){
-    echo "A";
+    echo "A <br>";
 }
+//************************************ */
+
+
