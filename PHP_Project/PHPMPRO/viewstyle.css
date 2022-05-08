@@ -1,0 +1,56 @@
+:root {
+    --green: #1ebe36;
+    --black: #000202fc;
+    --white: rgb(245, 245, 245);
+    --bg-color: rgb(104 143 199);
+    ;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: .1rem solid var(--black);
+}
+
+body {
+    background-color: #004085
+}
+#logo{
+    width: 30%;
+    height: 20%;
+}
+#flogo {
+    width: 40%;
+    height: 50%;
+}
+
+.fa-facebook, .fa-twitter , .fa-instagram {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    margin-right: 5%;
+    color: white;
+}
+.star {
+    color: rgba(193, 178, 137, 0.5);
+}
+#error {
+    background-color: white;
+    border: 1px;
+    border-radius: 50px;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+
+.navbar-brand{
+    font-size: 70px;
+    color: gray;
+}
+
+.nav-item{
+font-size: 30px;
+}
+
+footer{
+    margin-top: 250px;
+}

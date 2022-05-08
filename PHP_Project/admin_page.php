@@ -52,7 +52,6 @@ if (isset($_GET['delete'])) {
    <link rel="stylesheet" href="style2.css">
 
 </head>
-<body>
 <header>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Furnato.com</a>
@@ -76,6 +75,8 @@ if (isset($_GET['delete'])) {
   </div>
 </nav>
 </header>
+<body>
+
 <?php
 
 if (isset($message)) {
