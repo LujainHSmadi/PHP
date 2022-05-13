@@ -46,12 +46,12 @@ if (!empty($_SESSION['name']) || !empty($_SESSION['price'])) {
    
     $arr1 = explode("<br>", $_SESSION['name']);
     $arr2 = explode("<br>", $_SESSION['price']);
-   
+    $arr3 = explode("<br>", $_SESSION['pic']);
     for ($i = 0; $i < count($arr1) -1; $i++) {
         echo ('<div class="col-md-4 mt-2">
         <div class="card">
             <div class="card-body">
-                <div class="card-img-actions"> <img src="sofa.jpg" class="card-img img-fluid" width="96" height="350" alt="Image"> </div>
+                <div class="card-img-actions"> <img src= "upload/'.$arr3[$i]. '"class="card-img img-fluid" width="96" height="350" alt="Image"> </div>
             </div>
             <div class="card-body bg-light text-center">
                 <div class="mb-2">

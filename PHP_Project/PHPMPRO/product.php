@@ -37,7 +37,7 @@ session_start();
 
     <div class="container">
 
-        <form action="" method="post">
+        <form action="" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="prod">Product Name: </label>
                 <input type="text" class="form-control" id="prod" name="pname" Required>
@@ -77,8 +77,28 @@ session_start();
 if (isset($_POST['add'])) {
     $_SESSION['name'] .= $_POST['pname'] . '<br>';
     $_SESSION['price'] .= $_POST['price'] . '<br>';
-    $_SESSION['pic'] .= $_POST['picture'] . '<br>';
-    echo ('<tr><td>' . $_SESSION['name'] . '</td><td>' . $_SESSION['price'] . '</td><td>' . $_SESSION['pic'] . '</td></tr>');
+
+    $filename = $_FILES['picture']['name'];
+    $tempname = $_FILES['picture']['tmp_name'];
+    $_SESSION['pic'] .= $filename . '<br>';
+
+    if (file_exists("upload/" . $filename)) {
+        echo $filename . " already exists.";
+    } else {
+
+        //$_FILES["uploaded_file"]["tmp_name"] The location in which the file is temporarily stored on the server
+        move_uploaded_file($tempname, "upload/" . $filename);
+
+    }
+    $arr1 = explode("<br>", $_SESSION['name']);
+    $arr2 = explode("<br>", $_SESSION['price']);
+
+    $arr = explode("<br>", $_SESSION['pic']);
+
+    for ($i = 0; $i < count($arr) - 1; $i++) {
+        echo ('<tr><td>' . $arr1[$i] . '</td><td>' .  $arr2[$i] . '</td> <td> <img src="upload/' . $arr[$i] . '"> </td></tr>');
+
+    }
 }
 // session_unset();
 ?>
